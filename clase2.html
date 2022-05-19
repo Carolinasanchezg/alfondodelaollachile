@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Santiago Sebastian Bestoso">
+    <meta name="description" content="resumen de los contenidos aprendidos en la clase n°2">
+    <link rel="stylesheet" href="clase2.css">
+    <title>Clase2</title>
+</head>
+
+<body>
+<section id="listas">
+    <h2>Listas ordenadas</h2>
+        <h4>Como hacer una chocolatada</h4>
+        <ol type="1">
+    <!--Le aplicamos un tipo de valor que conlleva al oren con el atributo type-->
+            <li>paso 1:compra nesquik</li>
+            <li>paso 2:compra leche</li>
+            <li>paso 3:pone una cucharada de nesquik en el vaso</li>
+            <li>paso 4:no le pongas azucar</li>
+            <li>paso 5:ponele leche y tomatelo</li>
+        </ol>
+
+    <!--En uno aparecen N° (ol) y otro viñetas (ul)-->
+    
+    <h2>Lista desordenada</h2>
+        <h4>Nombres</h4>
+        <ul type="circle">
+    <!--Lo mismo, estos cambios ses pueden realizar en css de todas maneras con list-style-->
+            <li>Santiago</li>
+            <li>Denisse</li>
+            <li>Mercedes</li>
+            <li>Juan</li>
+        </ul>
+    <!--Esto fue un ejercicio de listas ol y ul-->
+
+    <h2>Listas de definicion</h2>
+        <dl>
+            <dt>HTML</dt>
+            <!--Termino que esetamos definiendo-->
+            <dd>Lenguaje de enmarcado de etiquetas</dd>
+            <!--Definicion misma-->
+            <dt>CSS</dt>
+            <dd>Lenguaje de estilos en cascada</dd>
+            <dt>JS</dt>
+            <dd>Lenguaje de programacion</dd>
+        </dl>
+    </section>
+
+    <section id="tablas">
+        <!--Sirven para definir la ubicacion de determinados elementos y componentes. Son un conjunto de celfas organizadas las etiquetas son:
+            -table:Inicio de la tabla
+            -th:
+            -tr:
+            -td:
+        -->
+
+        <h2>Tablas</h2>
+        <table border="2" cellspacing="10" cellpadding="10"><!--Le agregamos atributos para ponerle bordes y espacio, esto se aplica en css de todas maneras
+            - El padding es el espacio entre el texto y el cuadro, el relleno interno
+            - El cellspacing es el espaciado entre-->
+            <thead> <!--Ver para que sirven thead y variantes-->
+                <tr>
+                    <th>Lunes</th>
+                    <th>Martes</th>
+                    <th>Miercoles</th>
+                    <th>Jueves</th>
+                    <th>Viernes</th>
+                </tr>
+            </thead>
+            <tr>
+                <td>No hay clases</td>
+                <td>Hay clases</td>
+                <td>No hay clases</td>
+                <td>Hay clases</td>
+                <td>No hay clases</td>
+            </tr>
+            <tr>
+                <td>Afterclass</td>
+                <td>Afterclass</td>
+                <td>Afterclass</td>
+                <td>Afterclass</td>
+                <td>Afterclass</td>
+            </tr>
+        </table>
+    </section>
+
+<section id="formulario">
+    <!--Etiqueta donde el usuario ingresara o seleccionara valores que seran enviados a un archivo encargado de procesar la informacion
+    -Form: Action (Se encarga de recibir datos y procesarlos), Method(La forma en la que sera enviada la info), Enctype(como se codificaran los contenidos)-->
+    <h2>Formularios</h2>
+        <form action="enviar.php" method="post" enctype="text/plain">
+        <!--Aca se indica donde se enviaran los datos, si son visibles o no y la encriptacion-->
+            <label for="name">nombre</label>
+            <input type="text" name="name1" required><br>
+            <!--Atributo required indica que la informacion tiene que ser ingresada-->
+            <label for="apellido">apellido</label>
+            <input type="text" name="apellido"><br>
+            <label for="phone">tel</label>
+            <input type="number" placeholder="escribe tu tell"><br>
+            <!--Placeholder es un mensaje disponible cuando no haya ningun tipo de contenido en la casilla. Se puede no utilizar las label y utilizar este tipo de propiedad-->
+            <label for="">correo</label>
+            <input type="mail"><br>
+            <label for="">comentarios</label><br>
+            <textarea name="" id="" cols="30" rows="5" placeholder="escribe tu comentario"></textarea><br>
+            <!--Rows: filas. Cols: columnas-->
+            <input type="submit" value="reenviar">
+            <input type="reset" value="borrar">
+            <br><br><br>
+            <label for="">masculino</label>
+            <input type="radio" name="sexo"><br>
+            <label for="">femenino</label>
+            <input type="radio" name="sexo"><br>
+            <label for="">sin especificar</label>
+            <input type="radio" name="sexo"><br>
+            <!--para que solo nos deje marcar uno ponemos la propiedad name="sexo"-->
+            <br><br><br>
+            <label for="">invierno</label>
+            <input type="
+            checkbox"><br><!--Es la casilla de verificacion-->
+            <label for="">primavera</label>
+            <input type="checkbox"><br>
+            <label for="">verano</label>
+            <input type="checkbox"><br>
+            <label for="">otoño</label>
+            <input type="checkbox" checked><br><!--La palabra checked va a tildar de antemano la opcion predeterminada-->
+        </form>
+
+<input type="submit" value="enviar">
+<!--Envia el formulario-->
+<input type="password">
+<!--Formato contraseña-->
+<input type="date">
+<!--Nos pone un calendario-->
+<input type="file">
+<!--Nos da la opcion de incluir un archivo-->
+
+<fieldset> <!--engloba el contenido-->
+    <legend>mi leyenda</legend>
+</fieldset>
+
+<select name="Lenguajes"><!--Para un menu desplegable-->
+    <option value=""></option>
+    <option value=""></option>
+    <option value=""></option>
+    <option value=""></option>
+    <option value=""></option>
+    <option value=""></option>
+</select>
+</section>
+
+<section id="practica-formulario">
+    <!--Este apartado es para realizar el ejercicio de formularios-->
+</section>
+
+<section id="enlaces">
+    <!--Como inculimos y vinculamos enlaces correctamente. Hay tres:
+-relativos
+-absolutos
+-internos-->
+    <h1>Enlaces</h1>
+        <a href="#">Inicio</a>
+        <h2>enlaces relativos</h2>
+        <!--Son los que cuyo destino apunta a un documento dentro del mismo proyecto-->
+        <a href="img/fondo.jpg">imagen</a>
+
+        <h2>enlaces absolutos</h2>
+        <a href="https://youtube.com/" target="_self">Youtube en misma pestaña</a><br>
+        <!--aquellos cuyo destino estan fuera del sitio-->
+        <!--Valor self lo abre en la misma pestaña. Valor blank lo abre en otra.-->
+        <a href="https://youtube.com/" target="_blank">Youtube en otra pestaña</a>
+</section>
+
+<section id="multimedia">
+    <!--Para insertar una imgen se va a insertar la etiqueta img con el atributo src y alt (texto alternativo muy importante para el SEO. Son textos que puede ver una persona no vidente mediante un software)-->
+
+    <img src="imagen.extension" alt="imagen descripcion">
+    <video src="video.extension"></video>
+    <iframe src="x" frameborder="x"></iframe>
+    <!--El iframe es un marco interactivo que se tiene que copiar y pegar de otro lugar. Puede ser un video o con un mapa, spotify, etc-->
+    <audio src="mult.extension" controls="autoplay"></audio>
+</section>
+
+<section id="desafio">
+    <!--Crear wireframe y estructura del proyecto con balsamiq. Se entrega en un archivo comprimido. Se deben crear 5 archivos html y otras cosas explicadas en la app de coder.-->
+    <!--Aca abri esto para nada la verdad porque se hace con balsamiq jojo-->
+</section>
+</body>
+</html>
