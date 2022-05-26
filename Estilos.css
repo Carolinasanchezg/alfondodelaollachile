@@ -6,17 +6,154 @@
   font-family: 'Lato', sans-serif;
 }
 
-
-
-/*Tarjetas pequeñas1*/
-
-
 body {
   display: grid;
   place-items: center;
-  color:#ffffff;
+  background-image: url(COMIDAS/fondo-03.jpg);
+  background-size: cover;
 
 }
+
+
+
+/* menu */ 
+
+nav {
+    position: relative;
+    display: inline-flex;;
+    align-items: flex-end;
+      margin: 30px auto 0;
+      width: 470px;
+      height: 50px;
+      background-color: #fff1bb72;
+      border-radius: 50px;
+      font-size: 0;
+
+  }
+  nav a {
+      line-height: 50px;
+      height: 100%;
+      font-size: 15px;
+      display: inline-block;
+      position: relative;
+      z-index: 10;
+      text-decoration: none;
+      text-transform: uppercase;
+      text-align: center;
+      color: rgb(77, 47, 1);
+      cursor: pointer;
+  }
+  
+  nav .animation {
+      position: absolute;
+      height: 100%;
+      top: 0;
+      transition: all 0.5s ease 0s;
+      border-radius: 8px;
+  }
+  
+  a:nth-child(1) {
+      width: 90px;
+    font-weight: bold;
+      
+  }
+  
+  a:nth-child(2) {
+      width: 90px;
+    font-weight: bold;
+    
+  
+  
+  }
+  a:nth-child(3) {
+      width: 95px;
+    font-weight: bold;
+  
+  
+  }
+  a:nth-child(4) {
+      width: 85px;
+    font-weight: bold;
+  
+  
+  }
+  a:nth-child(5) {
+      width: 110px;
+    font-weight: bold;
+  
+  
+  }
+  nav .start-home, a:nth-child(1):hover~.animation {
+      width: 90px;
+      left: 0;
+    border-radius: 50px;
+      background-color: rgba(177, 115, 0, 0.522);  
+  }
+  nav .start-about, a:nth-child(2):hover~.animation {
+      width: 110px;
+      left: 80px;
+    border-radius: 50px;
+      background-color: rgba(177, 115, 0, 0.522);
+  }
+  nav .start-blog, a:nth-child(3):hover~.animation {
+      width: 95px;
+      left: 180px;
+    border-radius: 50px;
+      background-color: rgba(177, 115, 0, 0.522);
+  }
+  nav .start-portefolio, a:nth-child(4):hover~.animation {
+      width: 95px;
+      left: 270px;
+    border-radius: 50px;
+      background-color: rgba(177, 115, 0, 0.522);
+  }
+  nav .start-contact, a:nth-child(5):hover~.animation {
+      width: 110px;
+      left: 360px;
+    border-radius: 50px;
+      background-color: rgba(177, 115, 0, 0.522);
+    
+  }
+  
+  body {
+      font-size: 12px;
+      font-family: sans-serif;
+  }
+  
+  
+  span.s1 {
+    position: absolute;
+    top: 0;
+    font-size: 15rem;
+    font-weight: 800;
+    text-transform: uppercase;
+    color: #ffffff;
+  }
+  
+  span.s2 {
+    font-weight: 800;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    font-size: 15rem;
+    text-transform: uppercase;
+    color: #ffffff;
+  }
+  
+  div.container {
+    width: 100%;
+    max-width: 960px;
+    margin: 0 auto;
+    }
+  
+    img {
+    width: 100%;
+    height: auto;
+    }
+  
+/*Tarjetas pequeñas1*/
+
+
 
 .page-content {
   display: grid;
@@ -197,19 +334,66 @@ body {
     transition-duration: 0s;
   }
 }
+    
 
+/*Footer*/ 
 
+.footer-basic {
+  padding:40px 0;
+  background-color:#ffffff;
+  color:#331700;
+}
 
+.footer-basic ul {
+  padding:0;
+  list-style:none;
+  text-align:center;
+  font-size:18px;
+  line-height:1.6;
+  margin-bottom:0;
+}
 
+.footer-basic li {
+  padding:0 10px;
+}
 
+.footer-basic ul a {
+  color:inherit;
+  text-decoration:none;
+  opacity:0.8;
+}
 
+.footer-basic ul a:hover {
+  opacity:1;
+}
 
+.footer-basic .social {
+  text-align:center;
+  padding-bottom:25px;
+}
 
+.footer-basic .social > a {
+  font-size:24px;
+  width:40px;
+  height:40px;
+  line-height:40px;
+  display:inline-block;
+  text-align:center;
+  border-radius:50%;
+  border:1px solid #ccc;
+  margin:0 8px;
+  color:inherit;
+  opacity:0.75;
+}
 
-/*Footer*/
+.footer-basic .social > a:hover {
+  opacity:0.9;
+}
 
-
-
-
-
-
+.footer-basic .copyright {
+  margin-top:15px;
+  text-align:center;
+  font-size:13px;
+  color:#aaa;
+  margin-bottom:0;
+}
