@@ -3,24 +3,27 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="¿Tienes recetas por compartir? envianos tu preparación">
+    <meta name="keywords" content="recetas chilenas, envianos tu receta, preparación, sigue la tradición">
     <title>Contacto</title>
 </head>
 
 
 <body>
 
-	<LINK REL=StyleSheet HREF="sitio/stilos.css">
-
+	    <LINK REL=StyleSheet HREF="sitio/stilos.css">
 		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/css/bootstrap.min.css">
 		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ionicons/2.0.1/css/ionicons.min.css">
 		  
-	
+<!-- LOGO --> 
+<div>
+	<a href="index.html"><img class=logo src="sitio/comidas//LOGO.png"></a>
+</div>
+	  
 <!-- MENU -->        
 	<header>
-		<a href="index.html"><img class= logo src="COMIDAS/LOGO.png" alt="Logo" /></a>
 			<nav>
-				
 				<a href="index.html">Inicio</a>
 				<a href="siguelatradicion.html">Tradición</a>
 				<a href="conocelahistoria.html">Historia</a>
@@ -30,144 +33,89 @@
 			</nav> 
 		</header> 
 		
-		
 
-
-<!-- contenido  --> 
-
-
+<!-- TARJETA DE CONTACTO BOOTSTRAP  --> 
 
 <div class="container">
-
-
-
-<div class="row ">
-	
-  <div class="col-lg-60 mx-auto" style="margin: 2rem;">
-	  
+<div class="row ">	
+  <div class="col-lg-60 mx-auto" style="margin: 2rem;">  
 	<div class="tarejeta mt-2 mx-auto p-100 bg-light">
-	
 		<div class="tarjeta-body bg-light">
-   
 		<div class = "container">
-			
-						 <form id="contact-form" role="form">
-							 <h1 >Envíanos tu receta</h1>
+			<form id="contact-form" role="form">
+				<h1 >Envíanos tu receta</h1>
 
-		
 		<div class="controls">
 
 			<div class="row">
+
 				<div class="col-md-6">
 					<div class="form-group">
 						<label for="form_name"> Nombre: </label>
 						<input id="form_name" type="text" name="name" class="form-control" placeholder=" Ingresa tu nombre" required="required" data-error="Por favor ingresa tu nombre.">
-						
 					</div>
 				</div>
+
 				<div class="col-md-6">
 					<div class="form-group">
 						<label for="form_lastname">Apellido: </label>
 						<input id="form_lastname" type="text" name="surname" class="form-control" placeholder="Ingresa tu apellido" required="required" data-error=" Por favor ingresa tu apellido.">
-														</div>
+					</div>
 				</div>
 			</div>
+
 			<div class="row">
 				<div class="col-md-6">
 					<div class="form-group">
 						<label for="form_email">Email *</label>
 						<input id="form_email" type="email" name="email" class="form-control" placeholder="Email " required="required" data-error="Valid email is required.">
-						
 					</div>
-				</div>
-				<div class="col-md-6">
-					<div class="form-group">
-						<label for="form_need">Adjunta tu receta</label>
-					
-							<input type="file" name="Seleccionar archivo"
-							required="required" 
-							class="form__file"></input>
-						</select>
-						
-					</div>
+			    </div>
+
+			<div class="col-md-6">
+				<div class="form-group">
+					<label for="form_need">Adjunta tu receta</label>
+					    <input type="file" name="Seleccionar archivo" required="required" class="form__file"></input>
 				</div>
 			</div>
+			</div>
+
 			<div class="row">
 				<div class="col-md-12">
 					<div class="form-group">
 						<label for="form_message">Mensaje</label>
-						<textarea id="form_message" name="message" class="form-control" placeholder="Dejanos tu mensaje (opcional)." rows="10"></textarea
-							>
-						</div>
-
-					</div>
-
+						<textarea id="form_message" name="message" class="form-control" placeholder="Dejanos tu mensaje (opcional)." rows="10"></textarea>
+				    </div>
+			    </div>
 
 				<div class="col-md-12">
-					
-					<input type="submit" class="btn btn-outline-success btn-send  pt-2 btn-block
-						" value="Enviar" >
-
-					
-
-			<br>
-
-		
-		    </div>
-			</div>
-	  
+					<input type="submit" class="btn btn-outline-success btn-send  pt-2 btn-block" value="Enviar"><br>
+			    </div>
 			</div>
 
-
-	</div>
-	</form>
-	</div>
-	</div>
-
-
-</div>
-
-
-</div>
-
-
+		    </form>
+	    </div>
+        </div>
+    </div>
+  </div>
 </div>
 </div>
 
-			
-			
-
-
-
+						
 <!-- FOOTER -->
 
-<head>
-    <title>footer</title>
-</head>
-
-<body>
-    <div class="footer-basic">
-        <footer>
-            <div class="social"><a href="#"><i class="icon ion-social-instagram"></i></a>
-              <a href="#"><i class="icon ion-social-twitter"></i></a><a href="#"><i class="icon ion-social-facebook"></i></a>
-            
-            </div>
-            <ul class="list-inline">
-                <li class="list-inline-item"><a href="index.html">Inicio</a></li>
-                <li class="list-inline-item"><a href="siguelatradicion.html">Tradición</a></li>
-                <li class="list-inline-item"><a href="conocelahistoria.html">Historia</a></li>
-                <li class="list-inline-item"><a href="recetas.html">Recetas</a></li>
-                <li class="list-inline-item"><a href="contacto.html">Contacto</a></li>
-            </ul>
-            <p class="copyright">Al fondo de la olla © todos los derechos reservados 2022</p>
-        </footer>
-    </div>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/js/bootstrap.bundle.min.js"></script>
-
-
-
-
-
-</body>
+<div class="footer-basic">
+	<footer>
+	  <div>
+		<a href="index.html"><img class="iconofooter" src="sitio/comidas/LOGO.png"></a>
+	  </div>
+	  <div class="social">
+		<a href="#"><i class="icon ion-social-instagram"></i></a>
+		<a href="#"><i class="icon ion-social-twitter"></i></a>
+		<a href="#"><i class="icon ion-social-facebook"></i></a>
+	  </div>
+		<p>Diseñadora Carolina Sánchez</p>
+		<p class="copyright">Al fondo de la olla © todos los derechos reservados 2022</p>
+	</footer>
+  </div>
 </html>
