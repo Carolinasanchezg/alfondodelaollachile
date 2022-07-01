@@ -290,20 +290,20 @@ p {
 
 //*TARJETAS PAG 4 PRODUCTO//*
 section {
-  padding: 30px 0;
+  padding: 40px 0;
 }
 
 .container {
-  max-width: 480px;
+  max-width: 440px;
   margin: 0 auto;
-  padding: 0 20px;
+  padding: 0 10px;
 }
 
 .carousel {
   display: block;
   text-align: left;
   position: relative;
-  margin-bottom: 20px;
+  margin-bottom: 10px;
 }
 .carousel > input {
   clip: rect(1px, 1px, 1px, 1px);
@@ -358,7 +358,7 @@ section {
 }
 .carousel__slide figure {
   display: flex;
-  margin: 0;
+  margin: 0px;
 }
 
 .carousel__slide div {
@@ -391,7 +391,7 @@ section {
 
 .carousel__slide figcaption {
   align-self: flex-end;
-  padding: 20px 20px 20px 20px;
+  padding: 0px 0px 0px 20px;
   flex: 0 0 auto;
   width: 25%;
   min-width: 150px;
@@ -401,7 +401,7 @@ section {
 }
 
 .carousel__slide .credit {
-  margin-top: 1rem;
+  margin-top: 0.5rem;
   display: block;
   color: #000000;
   font-weight: bolder;
