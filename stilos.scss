@@ -348,7 +348,7 @@ section {
 .carousel__slide {
   position: relative;
   display: block;
-  flex: 1 0 100%;
+  flex: 0 0 100%;
   width: 100%;
   height: 100%;
   overflow: hidden;
@@ -385,7 +385,6 @@ section {
 
 .carousel__slide img {
   display: block;
-  flex: 1 1 auto;
   object-fit: cover;
 }
 
