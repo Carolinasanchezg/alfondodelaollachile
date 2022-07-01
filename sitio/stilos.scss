@@ -8,8 +8,8 @@ body {
   display: grid;
   place-items: center;
   background-image: url("background.jpg");
-  background-size: cover;
-}
+  background-size: cover;  
+  }
 
 h1 {
   font-weight: 300;
@@ -17,6 +17,7 @@ h1 {
   text-align: center;
   line-height: 1;
   padding: 20px 10px 10px 10px;
+  text-decoration: none;
 }
 
 /* BANNER - IMG PRINCIPAL */ 
@@ -47,7 +48,7 @@ nav {
   border-radius: 10px;
   font-size: 0;
 }
-  
+
 nav a {
   line-height: 50px;
   height: 100%;
@@ -55,11 +56,9 @@ nav a {
   display: inline-block;
   position: relative;
   z-index: 10;
-  text-decoration: none;
   text-transform: uppercase;
   text-align: center;
   color: rgb(77, 47, 1);
-  cursor: pointer;
 }
 
 nav .animation {
@@ -149,7 +148,6 @@ nav .start-contact, a:nth-child(5):hover~.animation {
   width: 350px;
   height: 300px;
   border-radius: 50px;
-  cursor: pointer;
   transition: 0.3s;
 }
 
@@ -175,7 +173,6 @@ nav .start-contact, a:nth-child(5):hover~.animation {
 
 .card:hover {
   transform: scale(0.9, 0.9);
-  box-shadow: 5px 5px 15px 15px rgba(154, 145, 138, 0.366);
 }
 
 .title-black {
@@ -184,10 +181,12 @@ nav .start-contact, a:nth-child(5):hover~.animation {
 
 @media all and (max-width: 500px) {
   .card-list {
-    /* On small screens, we are no longer using row direction but column */
     flex-direction: column;
   }
 }
+
+
+
 
 
 
@@ -247,7 +246,8 @@ nav .start-contact, a:nth-child(5):hover~.animation {
 
 
 
-/*TARJETAS PAGINA 3 CONOCE LA HISTORIA*/
+
+/*TARJETAS PAGINA 3 CONOCE LA HISTORIA */
 
 p {
   text-align: center;
@@ -281,15 +281,192 @@ p {
     transform: scale(1.05);
     }
 
+} 
+
+
+
+
+
+
+//*TARJETAS PAG 4 PRODUCTO//*
+section {
+  padding: 30px 0;
 }
 
+.container {
+  max-width: 480px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
 
+.carousel {
+  display: block;
+  text-align: left;
+  position: relative;
+  margin-bottom: 20px;
+}
+.carousel > input {
+  clip: rect(1px, 1px, 1px, 1px);
+  clip-path: inset(50%);
+  height: 1px;
+  width: 1px;
+  margin: 1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+}
+.carousel > input:nth-of-type(6):checked ~ .carousel__slides .carousel__slide:first-of-type {
+  margin-left: -500%;
+}
+.carousel > input:nth-of-type(5):checked ~ .carousel__slides .carousel__slide:first-of-type {
+  margin-left: -400%;
+}
+.carousel > input:nth-of-type(4):checked ~ .carousel__slides .carousel__slide:first-of-type {
+  margin-left: -300%;
+}
+.carousel > input:nth-of-type(3):checked ~ .carousel__slides .carousel__slide:first-of-type {
+  margin-left: -200%;
+}
+.carousel > input:nth-of-type(2):checked ~ .carousel__slides .carousel__slide:first-of-type {
+  margin-left: -100%;
+}
+.carousel > input:nth-of-type(1):checked ~ .carousel__slides .carousel__slide:first-of-type {
+  margin-left: 0%;
+}
 
+.carousel__slides {
+  position: relative;
+  z-index: 1;
+  padding: 0;
+  margin: 0;
+  overflow: hidden;
+  white-space: nowrap;
+  box-sizing: border-box;
+  display: flex;
+}
 
+.carousel__slide {
+  position: relative;
+  display: block;
+  flex: 1 0 100%;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  transition: all 350ms ease-out;
+  box-sizing: border-box;
+  white-space: normal;
+}
+.carousel__slide figure {
+  display: flex;
+  margin: 0;
+}
 
-//*TARJETAS PAG 4 RECETAS//*
+.carousel__slide div {
+  position: relative;
+  width: 100%;
+}
 
+.carousel__slide div:before {
+  display: block;
+  content: "";
+  width: 100%;
+  padding-top: 60%;
+}
 
+.carousel__slide div > img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.carousel__slide img {
+  display: block;
+  flex: 1 1 auto;
+  object-fit: cover;
+}
+
+.carousel__slide figcaption {
+  align-self: flex-end;
+  padding: 20px 20px 20px 20px;
+  flex: 0 0 auto;
+  width: 25%;
+  min-width: 150px;
+  color: #000000;
+  font-weight: bolder;
+  font-size: 18px;
+}
+
+.carousel__slide .credit {
+  margin-top: 1rem;
+  display: block;
+  color: #000000;
+  font-weight: bolder;
+  font-size: 16px;
+}
+
+.carousel__slide.scrollable {
+  overflow-y: scroll;
+}
+
+.carousel__product {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  margin: 0 -10px;
+}
+
+.carousel__slides + .carousel__product {
+  margin-top: 20px;
+}
+
+.carousel__product li {
+  flex: 1 1 auto;
+  max-width: calc((100% / 6) - 20px);
+  margin: 0 10px;
+  transition: all 300ms ease-in-out;
+}
+
+.carousel__product label {
+  display: block;
+  position: relative;
+}
+
+.carousel__product label:before {
+  display: block;
+  content: "";
+  width: 100%;
+  padding-top: 100%;
+}
+
+.carousel__product label > img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.carousel__product label:hover, .carousel__product label:focus {
+  cursor: pointer;
+}
+
+.carousel__product label:hover img, .carousel__product label:focus img {
+  transition: all 300ms ease-in-out;
+}
+
+.carousel__product img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
 
 
 
@@ -337,3 +514,19 @@ p {
   color:#240d00;
   margin-bottom:0;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
